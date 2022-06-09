@@ -4,6 +4,7 @@ console.log("JS file is linked.")
 // Paper beats Rock
 // Scissors beats Paper
 
+function rockPaperScissors() {
 // Prompt user to make a choice of R, P, or S
 
 // Verify user has chosen one of these three options
@@ -17,3 +18,4 @@ console.log("JS file is linked.")
 // Show total wins / losses & ties
 
 // Ask user if they want to play again
+}
