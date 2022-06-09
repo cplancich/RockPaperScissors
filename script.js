@@ -1,10 +1,11 @@
-console.log("JS file is linked.")
+var charactersChoice = prompt("What is your choice? R, P, or S")
+
+console.log(charactersChoice)
 
 // Rock beats Scissors
 // Paper beats Rock
 // Scissors beats Paper
 
-function rockPaperScissors() {
 // Prompt user to make a choice of R, P, or S
 
 // Verify user has chosen one of these three options
@@ -18,4 +19,3 @@ function rockPaperScissors() {
 // Show total wins / losses & ties
 
 // Ask user if they want to play again
-}
