@@ -1,12 +1,13 @@
-var charactersChoice = prompt("What is your choice? R, P, or S")
-
-console.log(charactersChoice)
-
 // Rock beats Scissors
 // Paper beats Rock
 // Scissors beats Paper
 
 // Prompt user to make a choice of R, P, or S
+var charactersChoice = prompt("What is your choice? R, P, or S");
+
+console.log(charactersChoice);
+
+var choices = ["R", "P", "S"];
 
 // Verify user has chosen one of these three options
 
@@ -14,8 +15,13 @@ console.log(charactersChoice)
 
 // Generate random choice for computer
 
-// Show game result
+// Compare user choice to computer's
 
-// Show total wins / losses & ties
+    // IF we meet a winning condition, you win! is displayed
+        // tally the win
+    // IF we meet a loss condition, you lose! is displaye
+        // Tally the loss
+    // IF there is a tie
+        // tally the tie
 
-// Ask user if they want to play again
+// Confirm if user wants to play again
