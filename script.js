@@ -1,13 +1,17 @@
 // Rock beats Scissors
 // Paper beats Rock
 // Scissors beats Paper
+var choices = ["R", "P", "S"];
+var wins = 0
+var ties = 0
+var losses = 0
+var playAgain = true
 
 // Prompt user to make a choice of R, P, or S
 function rockPaperScissors() {
-var charactersChoice = prompt("What is your choice? R, P, or S");
-
-var choices = ["R", "P", "S"];
-
+    var charactersChoice = prompt("What is your choice? R, P, or S");
+    
+    
 // Verify user has chosen one of these three options
 // if (charactersChoice != choices) {
 //     alert("You must choose R, P, or S!");
@@ -29,22 +33,30 @@ alert("Computer chose "+ compLetter);
     // IF we meet a winning condition, you win! is displayed
     if ((charactersChoice==="R" && compLetter==="S")||(charactersChoice==="P" && compLetter==="R")||(charactersChoice==="S"&&compLetter==="P")) {
         // tally the win
+        wins++
         alert("You won!");
     }
     // IF there is a tie
-    // tally the tie
     else if ((charactersChoice==="R" && compLetter==="R")||(charactersChoice==="P" && compLetter==="P")||(charactersChoice==="S"&&compLetter==="S")) {
+        // tally the tie
+        ties++
         alert("it's a tie!");
     }
     else {
-        alert("you lose!");
+        losses++
+        alert("you lose, loser! hahahaha!");
     }
 
-    // IF we meet a loss condition, you lose! is displaye
-    // Tally the loss
+    alert("Stats:\nLosses: "+losses+
+    "\nWins: "+wins+
+    "\nTies:"+ties)
 
 // Confirm if user wants to play again
+    playAgain = confirm("Do you want to play again?")
+}
 
+while(playAgain){
+    rockPaperScissors();
 }
 
 rockPaperScissors();
